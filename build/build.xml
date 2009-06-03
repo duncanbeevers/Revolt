@@ -1,0 +1,11 @@
+<project name="revolt" basedir="." default="build">
+    <property name="project.root" value="../../../../"/>
+    <property name="output.swf" value="build/revolt.swf"/>
+    
+    <!-- build the revolt app -->
+    <target name="build">
+        <exec dir="../" executable="/usr/local/flex3/bin/mxmlc">
+            <arg line="-source-path+=./ -output=${output.swf} com/anttikupila/revolt/RevoltWrapper.as"/>
+        </exec>
+    </target>
+</project>

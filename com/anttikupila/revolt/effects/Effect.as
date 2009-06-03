@@ -1,0 +1,1 @@
+﻿package com.anttikupila.revolt.effects {	import flash.display.BitmapData;		public class Effect {				function Effect() {		}				public function applyFX(gfx:BitmapData):void {			trace("applyFX is not defined for " + this);		}	}}
